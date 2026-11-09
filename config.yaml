@@ -1,0 +1,11 @@
+model_list:
+  - model_name: claude
+    litellm_params:
+      model: bedrock/<inference profile ID from Step 2>
+      aws_region_name: <your region, e.g. us-east-2>
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+litellm_settings:
+  drop_params: true
